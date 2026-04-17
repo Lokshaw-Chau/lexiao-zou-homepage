@@ -1,22 +1,22 @@
-# Lexiao Zou Local Homepage
+# Lexiao Zou Homepage
 
-This folder contains a polished static academic homepage for Lexiao Zou.
+A clean static personal homepage for Lexiao Zou.
+
+Files
+- `index.html` — homepage
+- `images/avatar.jpg` — profile photo
 
 Local preview
 - Run: `python3 -m http.server 8765`
 - Open: `http://127.0.0.1:8765/`
 
-GitHub Pages deployment
-1. Create a GitHub repository.
-2. Upload the contents of this folder to the repository root.
-3. In GitHub repository settings, enable Pages.
-4. Choose deployment from the main branch root.
-5. Because the site is pure static HTML, no Jekyll/Ruby build is required.
-
-Main files
-- `index.html` — the full homepage
-- `images/avatar.jpg` — profile image copied from the public homepage
+GitHub Pages
+1. Push this repository to GitHub.
+2. Open repository Settings → Pages.
+3. Under Build and deployment, choose `Deploy from a branch`.
+4. Select branch `main` and folder `/ (root)`.
+5. Save and wait for deployment.
 
 Notes
-- Content is based on publicly available sources including the personal homepage, DBLP, and related public academic pages.
-- Awards, services, and talks sections are intentionally conservative where direct public evidence is limited.
+- This repository is intentionally pure static HTML with no Jekyll, Ruby, or workflow dependency.
+- The homepage is written in a personal-homepage style rather than as a third-person report.
