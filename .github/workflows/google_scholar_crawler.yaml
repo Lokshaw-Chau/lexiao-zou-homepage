@@ -1,16 +1,13 @@
 name: Get Citation Data
 
 on:
-  page_build:
-  schedule:
-    - cron: '0 8 * * *'
+  workflow_dispatch:
 
 jobs:
-  build:
+  disabled:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Explain skip
+      - name: Workflow disabled
         run: |
-          echo "This repository no longer includes ./google_scholar_crawler, so the legacy citation crawler workflow is disabled."
-          echo "If you want scholar stats later, add the crawler back or replace this workflow with a maintained implementation."
+          echo "Legacy Google Scholar crawler disabled because ./google_scholar_crawler is not present in this repository."
+          echo "Enable a new maintained workflow if scholar stats are needed in the future."
